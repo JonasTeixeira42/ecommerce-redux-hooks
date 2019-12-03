@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'; // conecta o componente com o estado do redux(store)
 import { MdAddShoppingCart } from 'react-icons/md';
+import PropTypes from 'prop-types';
 import { formatPrice } from '../../util/format';
 import api from '../../services/api';
 
