@@ -61,6 +61,11 @@ class Home extends Component {
   }
 }
 
+Home.propTypes = {
+  addToCartRequest: PropTypes.func.isRequired,
+  amount: PropTypes.number.isRequired,
+};
+
 const mapStateToProps = state => ({
   amount: state.cart.reduce((amount, product) => {
     amount[product.id] = product.amount;
